@@ -1,0 +1,42 @@
+package com.socket.entidad;
+
+import java.io.Serializable;
+
+public class Supervisor implements Serializable {
+	
+	private int codigo;
+	private double sueldo;
+	private boolean condicion;
+	
+	public Supervisor(int codigo, double sueldo, boolean condicion) {
+		super();
+		this.codigo = codigo;
+		this.sueldo = sueldo;
+		this.condicion = condicion;
+	}
+
+	 
+	public String validacion() {
+		if(condicion == true) {
+			return "Estable";
+		}else {
+			return "Por campaña";
+		}
+			
+	}
+
+
+	public Supervisor() {
+		super();
+	}
+
+
+	
+	
+	
+	
+	
+	
+	
+
+}

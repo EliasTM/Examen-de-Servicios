@@ -1,0 +1,5 @@
+package com.socket.entidad;
+
+public class Supervisor {
+
+}

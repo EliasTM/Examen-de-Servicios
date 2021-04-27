@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+C:\Users\elias\Downloads\Elias\Ciclo 6\Desarrollo de Servicios Web II\Examen1_Data\.metadata\.plugins\org.eclipse.jdt.core
+3443411554.index
+1830469589.index
