@@ -74,11 +74,12 @@ public class frmCliente extends JFrame implements ActionListener {
   protected void actionPerformedBtnEnviar(final ActionEvent arg0) {
     try {
       Socket enviar = new Socket("localhost", 1026);
-      List<Supervisor> lista = new ArrayList<Supervisor>();
+      List<Supervisor> lista = new ArrayList<>();
       lista.add(new Supervisor(1, 25000, true));
       lista.add(new Supervisor(2, 35000, false));
       lista.add(new Supervisor(3, 45000, true));
       lista.add(new Supervisor(4, 55000, false));
+      lista.add(new Supervisor(5, 75000, false));
       ObjectOutputStream stream = new ObjectOutputStream(enviar.getOutputStream());
       stream.writeObject(lista);
       enviar.close();
